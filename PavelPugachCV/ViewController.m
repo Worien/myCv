@@ -2,7 +2,7 @@
 //  ViewController.m
 //  PavelPugachCV
 //
-//  Created by Евгений on 07.05.16.
+//  Created by Pavel on 07.05.16.
 //  Copyright © 2016 Pavel. All rights reserved.
 //
 

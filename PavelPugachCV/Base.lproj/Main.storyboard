@@ -333,7 +333,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ava.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-bE-jVX">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="-12" y="0.0" width="600" height="1080"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F94-WE-oMf">
                                 <rect key="frame" x="6" y="-1" width="75" height="72"/>
@@ -344,14 +344,70 @@
                                 </constraints>
                                 <state key="normal" image="menu.png"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pavel Pugach" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvn-fn-GWn">
+                                <rect key="frame" x="240" y="80" width="121" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Junior IOS Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R45-mA-Mb6">
+                                <rect key="frame" x="219" y="114" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, my name is Pavel, I am 22." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c75-ia-PIg">
+                                <rect key="frame" x="176" y="195" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYw-LR-k39">
+                                <rect key="frame" x="50" y="171" width="500" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Over the past few years, I have managed to finish university - bachelor's and specialist degrees. Also, I am working for a famous Ukrainian startup as an Android developer now. But I want to change the direction of work to IOS and I hope the internship in "MacPaw" will be my first step. </string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvl-rb-cnf">
+                                <rect key="frame" x="265" y="531" width="46" height="30"/>
+                                <state key="normal" title="Next »">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="amD-OP-G9Q" kind="show" id="e9P-fq-Bj3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oYw-LR-k39" secondAttribute="trailing" constant="15" id="6dx-lf-ayr"/>
                             <constraint firstItem="F94-WE-oMf" firstAttribute="top" secondItem="uiz-wg-ZHE" secondAttribute="topMargin" constant="20" id="CnP-II-JwG"/>
+                            <constraint firstItem="oYw-LR-k39" firstAttribute="leading" secondItem="uiz-wg-ZHE" secondAttribute="leadingMargin" constant="15" id="EM5-2C-9lW"/>
+                            <constraint firstItem="hwY-bE-jVX" firstAttribute="centerX" secondItem="uiz-wg-ZHE" secondAttribute="centerX" id="Fef-E2-dwY"/>
+                            <constraint firstItem="R45-mA-Mb6" firstAttribute="top" secondItem="nvn-fn-GWn" secondAttribute="bottom" constant="10" id="Fh3-Av-wXE"/>
+                            <constraint firstItem="nvn-fn-GWn" firstAttribute="centerX" secondItem="uiz-wg-ZHE" secondAttribute="centerX" id="GQ5-XU-rtu"/>
+                            <constraint firstItem="oYw-LR-k39" firstAttribute="centerX" secondItem="uiz-wg-ZHE" secondAttribute="centerX" id="JL7-g3-c3P"/>
                             <constraint firstItem="F94-WE-oMf" firstAttribute="leading" secondItem="uiz-wg-ZHE" secondAttribute="leadingMargin" id="PkO-nf-bDh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oYw-LR-k39" secondAttribute="trailing" constant="30" id="T4c-or-Jez"/>
+                            <constraint firstItem="c75-ia-PIg" firstAttribute="top" secondItem="R45-mA-Mb6" secondAttribute="bottom" constant="60" id="UbE-0W-gNF"/>
+                            <constraint firstItem="dcQ-ug-Sc6" firstAttribute="top" secondItem="Qvl-rb-cnf" secondAttribute="bottom" constant="30" id="XiA-nR-lZQ"/>
+                            <constraint firstItem="nvn-fn-GWn" firstAttribute="top" secondItem="8jc-81-DDq" secondAttribute="bottom" constant="60" id="Z5w-C7-vVY"/>
                             <constraint firstItem="hwY-bE-jVX" firstAttribute="top" secondItem="8jc-81-DDq" secondAttribute="bottom" constant="-20" id="dII-kN-fsb"/>
                             <constraint firstItem="hwY-bE-jVX" firstAttribute="leading" secondItem="uiz-wg-ZHE" secondAttribute="leading" id="hTT-qQ-a9l"/>
+                            <constraint firstItem="Qvl-rb-cnf" firstAttribute="centerX" secondItem="uiz-wg-ZHE" secondAttribute="centerX" id="i99-Mn-FtD"/>
+                            <constraint firstItem="c75-ia-PIg" firstAttribute="centerX" secondItem="uiz-wg-ZHE" secondAttribute="centerX" id="kes-k3-PN0"/>
                             <constraint firstAttribute="trailing" secondItem="hwY-bE-jVX" secondAttribute="trailing" id="oPJ-tE-2Zw"/>
+                            <constraint firstItem="R45-mA-Mb6" firstAttribute="centerX" secondItem="uiz-wg-ZHE" secondAttribute="centerX" id="r15-xV-LsY"/>
+                            <constraint firstItem="oYw-LR-k39" firstAttribute="top" secondItem="c75-ia-PIg" secondAttribute="bottom" constant="5" id="rFb-7d-kOz"/>
+                            <constraint firstItem="nvn-fn-GWn" firstAttribute="centerX" secondItem="uiz-wg-ZHE" secondAttribute="centerX" id="tVI-cV-PUm"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -391,6 +447,12 @@
                                 </constraints>
                                 <state key="normal" image="menu.png"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pavel Pugach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtD-7O-SjO">
+                                <rect key="frame" x="218" y="112" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -398,7 +460,9 @@
                             <constraint firstItem="U3w-Ag-OQF" firstAttribute="top" secondItem="xkL-hY-NYj" secondAttribute="topMargin" constant="20" id="NLr-6c-aTW"/>
                             <constraint firstItem="LoX-41-Hjk" firstAttribute="top" secondItem="0m6-IL-FGn" secondAttribute="bottom" constant="-20" id="aog-W2-BQy"/>
                             <constraint firstItem="U3w-Ag-OQF" firstAttribute="leading" secondItem="xkL-hY-NYj" secondAttribute="leadingMargin" id="dQ6-3T-KT7"/>
+                            <constraint firstItem="XtD-7O-SjO" firstAttribute="centerX" secondItem="xkL-hY-NYj" secondAttribute="centerX" id="dmY-FS-pAD"/>
                             <constraint firstItem="LoX-41-Hjk" firstAttribute="leading" secondItem="xkL-hY-NYj" secondAttribute="leading" id="rz1-Kt-5yA"/>
+                            <constraint firstItem="XtD-7O-SjO" firstAttribute="top" secondItem="0m6-IL-FGn" secondAttribute="bottom" constant="60" id="uoX-2h-Po0"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -430,5 +494,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="jLx-8u-Uf9"/>
         <segue reference="NFU-ZU-oos"/>
+        <segue reference="e9P-fq-Bj3"/>
     </inferredMetricsTieBreakers>
 </document>

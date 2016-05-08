@@ -2,7 +2,7 @@
 //  MeViewController.m
 //  PavelPugachCV
 //
-//  Created by Евгений on 08.05.16.
+//  Created by Pavel on 08.05.16.
 //  Copyright © 2016 Pavel. All rights reserved.
 //
 
