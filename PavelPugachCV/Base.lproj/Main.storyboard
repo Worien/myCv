@@ -264,10 +264,29 @@
                                             <constraint firstAttribute="height" constant="150" id="iD9-os-6oU"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I hope you have a wonferful mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vZ-PX-nEb">
+                                        <rect key="frame" x="171" y="36" width="258" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctx-ER-iwq">
+                                        <rect key="frame" x="213" y="260" width="175" height="30"/>
+                                        <state key="normal" title="Invite you to see my cv » ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ja1-gK-2zn" kind="show" id="jLx-8u-Uf9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ctx-ER-iwq" secondAttribute="bottom" constant="30" id="1ij-8v-NFM"/>
                                     <constraint firstItem="hOx-Sz-dV0" firstAttribute="centerX" secondItem="DGx-gQ-o1v" secondAttribute="centerX" id="6eH-Ey-8uB"/>
+                                    <constraint firstItem="0vZ-PX-nEb" firstAttribute="top" secondItem="DGx-gQ-o1v" secondAttribute="top" constant="30" id="915-L9-QB7"/>
+                                    <constraint firstItem="ctx-ER-iwq" firstAttribute="centerX" secondItem="DGx-gQ-o1v" secondAttribute="centerX" id="D7D-YJ-Ok9"/>
+                                    <constraint firstItem="0vZ-PX-nEb" firstAttribute="centerX" secondItem="DGx-gQ-o1v" secondAttribute="centerX" id="UnQ-Hm-1o5"/>
                                     <constraint firstItem="hOx-Sz-dV0" firstAttribute="centerY" secondItem="DGx-gQ-o1v" secondAttribute="centerY" id="Zxg-bD-zLw"/>
                                 </constraints>
                             </view>
@@ -313,7 +332,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ava.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-bE-jVX">
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ava.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-bE-jVX">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F94-WE-oMf">
@@ -409,6 +428,7 @@
         <image name="work.png" width="75" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jLx-8u-Uf9"/>
         <segue reference="NFU-ZU-oos"/>
     </inferredMetricsTieBreakers>
 </document>
