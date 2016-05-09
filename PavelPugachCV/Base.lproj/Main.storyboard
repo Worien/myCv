@@ -613,7 +613,7 @@
                                 <state key="normal" image="menu.png"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmT-ic-ROn">
-                                <rect key="frame" x="30" y="80" width="111" height="40"/>
+                                <rect key="frame" x="25" y="80" width="111" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="education.png" translatesAutoresizingMaskIntoConstraints="NO" id="bL8-lT-9kQ">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
@@ -633,16 +633,46 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="- 2010 - 2014 - Faculty of Biomedical Engineering, Speciality - &quot;Computer Science&quot;, Bachelor's degree" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBR-Sp-vTt">
+                                <rect key="frame" x="70" y="140" width="480" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="- 2014-2016 - Faculty of Biomedical Engineering, Speciality - &quot;Medical Cybernetics and Information Technologies&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-Og-77a">
+                                <rect key="frame" x="70" y="191" width="480" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia1-C8-5SQ">
+                                <rect key="frame" x="285" y="544" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="»">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Wg-vT-OUy" kind="show" id="3Hk-mI-1x1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="yBR-Sp-vTt" secondAttribute="trailing" constant="30" id="2At-X5-w3s"/>
                             <constraint firstItem="LKC-ai-Zof" firstAttribute="top" secondItem="vPp-yJ-05i" secondAttribute="bottom" constant="-20" id="FP5-wW-iQb"/>
                             <constraint firstItem="nV9-Q0-RXA" firstAttribute="top" secondItem="kfa-bp-9zJ" secondAttribute="topMargin" constant="20" id="Jrp-g7-h3a"/>
                             <constraint firstAttribute="trailing" secondItem="LKC-ai-Zof" secondAttribute="trailing" id="LRA-Es-fio"/>
+                            <constraint firstItem="j5x-h2-UgW" firstAttribute="top" secondItem="ia1-C8-5SQ" secondAttribute="bottom" constant="20" id="NVF-Ll-49D"/>
                             <constraint firstItem="vmT-ic-ROn" firstAttribute="top" secondItem="nV9-Q0-RXA" secondAttribute="bottom" constant="30" id="OfY-Fi-b3T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ImA-Og-77a" secondAttribute="trailing" constant="30" id="Qan-vb-vkN"/>
+                            <constraint firstItem="yBR-Sp-vTt" firstAttribute="leading" secondItem="kfa-bp-9zJ" secondAttribute="leadingMargin" constant="50" id="TFn-Xc-bl7"/>
+                            <constraint firstItem="ia1-C8-5SQ" firstAttribute="centerX" secondItem="kfa-bp-9zJ" secondAttribute="centerX" id="Wpt-KQ-V21"/>
                             <constraint firstItem="nV9-Q0-RXA" firstAttribute="leading" secondItem="kfa-bp-9zJ" secondAttribute="leadingMargin" id="b9d-et-PZa"/>
+                            <constraint firstItem="ImA-Og-77a" firstAttribute="top" secondItem="yBR-Sp-vTt" secondAttribute="bottom" constant="10" id="cWi-nT-NG7"/>
+                            <constraint firstItem="yBR-Sp-vTt" firstAttribute="top" secondItem="vmT-ic-ROn" secondAttribute="bottom" constant="20" id="d1B-8q-L5c"/>
                             <constraint firstItem="LKC-ai-Zof" firstAttribute="leading" secondItem="kfa-bp-9zJ" secondAttribute="leading" id="iOr-1N-Swl"/>
-                            <constraint firstItem="vmT-ic-ROn" firstAttribute="leading" secondItem="kfa-bp-9zJ" secondAttribute="leadingMargin" constant="10" id="zQd-4j-uCy"/>
+                            <constraint firstItem="ImA-Og-77a" firstAttribute="leading" secondItem="kfa-bp-9zJ" secondAttribute="leadingMargin" constant="50" id="nmg-rt-31k"/>
+                            <constraint firstItem="vmT-ic-ROn" firstAttribute="leading" secondItem="kfa-bp-9zJ" secondAttribute="leadingMargin" constant="5" id="zQd-4j-uCy"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -731,5 +761,6 @@
         <segue reference="6CL-oG-vn5"/>
         <segue reference="dED-yO-VKx"/>
         <segue reference="U0v-vY-cu2"/>
+        <segue reference="3Hk-mI-1x1"/>
     </inferredMetricsTieBreakers>
 </document>
