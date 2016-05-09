@@ -694,10 +694,10 @@
             </objects>
             <point key="canvasLocation" x="2410" y="1203"/>
         </scene>
-        <!--View Controller-->
+        <!--Work View Controller-->
         <scene sceneID="7ZQ-4K-gOd">
             <objects>
-                <viewController id="0Wg-vT-OUy" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="0Wg-vT-OUy" customClass="WorkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DB1-xb-WEZ"/>
                         <viewControllerLayoutGuide type="bottom" id="MWl-Xm-ZdP"/>
@@ -821,6 +821,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="batButton" destination="UiU-RK-mpT" id="H90-hg-Ore"/>
+                        <outlet property="btnAin" destination="iqO-C4-oPS" id="0NB-BM-OY8"/>
+                        <outlet property="btnPlayMatker" destination="4L6-rO-JMV" id="dv8-sX-krh"/>
                         <outlet property="navigationButton" destination="3Bm-Qr-5Kp" id="EhY-gk-IwW"/>
                     </connections>
                 </viewController>

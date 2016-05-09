@@ -27,6 +27,7 @@
 		FDD735A71CDF6851004C38A4 /* contac.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD735A61CDF6851004C38A4 /* contac.png */; };
 		FDD735AA1CDF759C004C38A4 /* avatar2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD735A91CDF759C004C38A4 /* avatar2.png */; };
 		FDD735AD1CDF7640004C38A4 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD735AC1CDF7640004C38A4 /* MeViewController.m */; };
+		FDD735B01CE10823004C38A4 /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD735AF1CE10823004C38A4 /* WorkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,8 @@
 		FDD735A91CDF759C004C38A4 /* avatar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar2.png; sourceTree = "<group>"; };
 		FDD735AB1CDF7640004C38A4 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		FDD735AC1CDF7640004C38A4 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		FDD735AE1CE10823004C38A4 /* WorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkViewController.h; sourceTree = "<group>"; };
+		FDD735AF1CE10823004C38A4 /* WorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				FDD735781CDE1E8D004C38A4 /* ViewController.m */,
 				FDD735AB1CDF7640004C38A4 /* MeViewController.h */,
 				FDD735AC1CDF7640004C38A4 /* MeViewController.m */,
+				FDD735AE1CE10823004C38A4 /* WorkViewController.h */,
+				FDD735AF1CE10823004C38A4 /* WorkViewController.m */,
 				FDD7357A1CDE1E8D004C38A4 /* Main.storyboard */,
 				FDD735941CDF3465004C38A4 /* NavigationController.h */,
 				FDD735951CDF3465004C38A4 /* NavigationController.m */,
@@ -227,6 +232,7 @@
 				FDD735AD1CDF7640004C38A4 /* MeViewController.m in Sources */,
 				FDD735791CDE1E8D004C38A4 /* ViewController.m in Sources */,
 				FDD735761CDE1E8D004C38A4 /* AppDelegate.m in Sources */,
+				FDD735B01CE10823004C38A4 /* WorkViewController.m in Sources */,
 				FDD735961CDF3465004C38A4 /* NavigationController.m in Sources */,
 				FDD735731CDE1E8D004C38A4 /* main.m in Sources */,
 				FDD735931CDE9BDE004C38A4 /* SWRevealViewController.m in Sources */,
